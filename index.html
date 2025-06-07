@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/book.png" type="image/x-icon">
+    <title>Portal de Manuais - Technocel Geranciamento de Risco</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Technocel Gerenciamento de Risco</h1>
+            <p>Biblioteca de Manuais de todas as Tecnologias de Monitoramento</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Buscar manuais..." id="searchInput">
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="sascar">Sascar</button>
+                <button class="filter-btn" data-category="autotrac">Autotrac</button>
+                <button class="filter-btn" data-category="onixsat">Onixsat</button>
+                <button class="filter-btn" data-category="omnilink">Omnilink</button>
+                <button class="filter-btn" data-category="maxtrack">Maxtrack</button>
+                <button class="filter-btn" data-category="technocel">Technocel</button>
+                <button class="filter-btn" data-category="sighra">Sighra</button>
+            </div>
+        </div>
+
+        <div class="manuals-grid" id="manualsGrid">
+            <!-- Sascar -->
+            <div class="manual-card" data-category="sascar"
+                data-title="manual atualização horario de verão do rastreador">
+                <div class="manual-header">
+                    <div class="manual-icon sascar">SAS</div>
+                    <div>
+                        <div class="manual-title">Atualização do Horário em Tablets SASMDT</div>
+                        <div class="manual-category">Sascar</div>
+                    </div>
+                </div>
+                <div class="manual-description">
+                    Este manual descreve o procedimento para atualizar o horário em tablets que utilizam o aplicativo
+                    SASMDT, especialmente em casos de horário de verão ou quando o horário do aplicativo não sincroniza
+                    automaticamente com o Android.</div>
+                <div class="manual-actions">
+                    <a href="./manual-sascar/atualizar-horario-tablet-SASMDT.pdf" class="btn btn-primary">📖 Visualizar</a>
+                    <a href="./manual-sascar/atualizar-horario-tablet-SASMDT.pdf" class="btn btn-secondary">⬇️ Download</a>
+                </div>
+            </div>
+
+            <!-- Autotrac -->
+            <div class="manual-card" data-category="autotrac" data-title="manual técnico autotrac configuração">
+                <div class="manual-header">
+                    <div class="manual-icon autotrac">AUT</div>
+                    <div>
+                        <div class="manual-title">Manual Técnico</div>
+                        <div class="manual-category">Autotrac</div>
+                    </div>
+                </div>
+                <div class="manual-description">
+                    Documentação técnica completa do sistema Autotrac, incluindo especificações, diagramas de conexão e
+                    procedimentos de manutenção preventiva.
+                </div>
+                <div class="manual-actions">
+                    <a href="#" class="btn btn-primary">📖 Visualizar</a>
+                    <a href="#" class="btn btn-secondary">⬇️ Download</a>
+                </div>
+            </div>
+
+            <!-- Onixsat -->
+            <div class="manual-card" data-category="onixsat" data-title="guia onixsat rastreamento satelital">
+                <div class="manual-header">
+                    <div class="manual-icon onixsat">ONI</div>
+                    <div>
+                        <div class="manual-title">Guia do Usuário</div>
+                        <div class="manual-category">Onixsat</div>
+                    </div>
+                </div>
+                <div class="manual-description">
+                    Manual do usuário para sistemas Onixsat com foco em rastreamento satelital. Aborda configurações
+                    avançadas e troubleshooting comum.
+                </div>
+                <div class="manual-actions">
+                    <a href="#" class="btn btn-primary">📖 Visualizar</a>
+                    <a href="#" class="btn btn-secondary">⬇️ Download</a>
+                </div>
+            </div>
+
+            <!-- Omnilink -->
+            <div class="manual-card" data-category="omnilink" data-title="manual omnilink integração sistemas">
+                <div class="manual-header">
+                    <div class="manual-icon omnilink">OMI</div>
+                    <div>
+                        <div class="manual-title">Manual de Integração</div>
+                        <div class="manual-category">Omnilink</div>
+                    </div>
+                </div>
+                <div class="manual-description">
+                    Documentação para integração de sistemas Omnilink com plataformas terceiras. Inclui APIs, protocolos
+                    de comunicação e exemplos práticos.
+                </div>
+                <div class="manual-actions">
+                    <a href="#" class="btn btn-primary">📖 Visualizar</a>
+                    <a href="#" class="btn btn-secondary">⬇️ Download</a>
+                </div>
+            </div>
+
+            <!-- Maxtrac -->
+            <div class="manual-card" data-category="maxtrac" data-title="manual maxtrac instalação configuração">
+                <div class="manual-header">
+                    <div class="manual-icon maxtrac">M</div>
+                    <div>
+                        <div class="manual-title">Manual Completo</div>
+                        <div class="manual-category">Maxtrac</div>
+                    </div>
+                </div>
+                <div class="manual-description">
+                    Manual completo do sistema Maxtrac cobrindo instalação, configuração, operação e manutenção. Ideal
+                    para técnicos e instaladores.
+                </div>
+                <div class="manual-actions">
+                    <a href="#" class="btn btn-primary">📖 Visualizar</a>
+                    <a href="#" class="btn btn-secondary">⬇️ Download</a>
+                </div>
+            </div>
+
+            <!-- Technocel -->
+            <div class="manual-card" data-category="technocel" data-title="procedimentos Operacionais Technocel">
+                <div class="manual-header">
+                    <div class="manual-icon positron">TEC</div>
+                    <div>
+                        <div class="manual-title">Manual Operacional</div>
+                        <div class="manual-category">Procedimentos Operacionais Trafegus</div>
+                    </div>
+                </div>
+                <div class="manual-description">
+                    O manual aborda como identificar mensagens e alertas gerados pelos veículos e, especificamente, como
+                    confeccionar uma NCF (Não Conformidade) no sistema Trafegus, seja diretamente do veículo, de suas
+                    propriedades, ou de um evento específico.
+                </div>
+                <div class="manual-actions">
+                    <a href="#" class="btn btn-primary">📖 Visualizar</a>
+                    <a href="#" class="btn btn-secondary">⬇️ Download</a>
+                </div>
+            </div>
+
+            <!-- Sighra -->
+            <div class="manual-card" data-category="sighra" data-title="manual sighra monitoramento frotas">
+                <div class="manual-header">
+                    <div class="manual-icon sighra">SG</div>
+                    <div>
+                        <div class="manual-title">Manual de Frotas</div>
+                        <div class="manual-category">Sighra</div>
+                    </div>
+                </div>
+                <div class="manual-description">
+                    Manual específico para gerenciamento de frotas com sistema Sighra. Aborda telemetria, relatórios,
+                    gestão de combustível e análise de comportamento.
+                </div>
+                <div class="manual-actions">
+                    <a href="#" class="btn btn-primary">📖 Visualizar</a>
+                    <a href="#" class="btn btn-secondary">⬇️ Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-results" id="noResults">
+            <p>Nenhum manual encontrado para sua busca.</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
