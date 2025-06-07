@@ -89,19 +89,4 @@
             observer.observe(card);
         });
 
-        // Placeholder dos links (substitua pelos links reais do GitHub)
-        document.querySelectorAll('.btn-primary').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                alert('Redirecionar para visualização do manual no GitHub');
-                // window.open('URL_DO_MANUAL_NO_GITHUB', '_blank');
-            });
-        });
-
-        document.querySelectorAll('.btn-secondary').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                alert('Iniciar download do manual');
-                // window.open('URL_DOWNLOAD_DIRETO_DO_GITHUB', '_blank');
-            });
-        });
+     
