@@ -89,4 +89,43 @@
             observer.observe(card);
         });
 
+        // Atualizar o Ano da Copy 
+        document.addEventListener('DOMContentLoaded', function() {
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    // Quando o usuário rolar a página, verifica a posição
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        // Se a rolagem for maior que 20px do topo, mostra o botão
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    }
+
+    // Quando o botão é clicado, rola para o topo da página
+    backToTopBtn.addEventListener('click', function() {
+        // Para rolagem suave (compatível com a maioria dos navegadores modernos)
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+        // Para navegadores mais antigos (fallback)
+        // document.body.scrollTop = 0; // Para Safari
+        // document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+    });
+});
      
